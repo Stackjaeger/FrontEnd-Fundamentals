@@ -8,9 +8,9 @@
     <title>Proyecto final</title>
 
     <!--Cargan las Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair&family=Raleway&display=swap" rel="stylesheet">
     <!--Cargan el CSS y el Js-->
     <link rel="stylesheet" href="./Kodex/app.css">
     <script type="text/javascript" src="./Kodex/Logica.js"></script>
@@ -19,7 +19,7 @@
 <body>
     <header>
         <img src="" alt="">
-        <h1>Tienda <span>Muebles</span></h1>
+        <h1>Tienda <span class="titulo">Muebles</span></h1>
     </header>
 
     <nav>
@@ -39,82 +39,88 @@
     <main>
         <h2>Nuestros Productos</h2>
         <!-- Producto 1 -->
-        <section id="Seccion 1">
-            <article>
-                <div id="Columna-1">
-                    <img src="./Bild/producto1.jpg" alt="">
+        <section>
+            <article class="Seccion-1">
+                <div>
+                    <img src="./Bild/producto1.jpg" alt="" class="Columna-1">
                 </div>
-                <div id="Columna-2" class="box-descripcion">
+                <div id="Columna-1" class="box-descripcion">
                     <h3>Producto 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores hic quidem ad recusandae ab,
                         corrupti delectus commodi est assumenda, debitis fugiat nobis, dicta quisquam? Commodi ipsam
                         esse nihil qui recusandae?</p>
-                    <span>$30,000</span>
+                    <span class="precio">$30,000</span>
+                    <br><br>
                     <button>Agregar al carrito</button>
                 </div>
             </article>
         </section>
         <!-- Producto 2 -->
-        <section id="Seccion 2">
-            <article>
+        <section class="Seccion2">
+            <article class="columna-producto-2">
                 <img src="/Bild/producto2.jpg" alt="">
                 <div class="box-descripcion">
                     <h3>Producto 2</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores hic quidem ad recusandae ab,
                         corrupti delectus commodi est assumenda, debitis fugiat nobis, dicta quisquam? Commodi ipsam
                         esse nihil qui recusandae?</p>
-                    <span>$28,000</span>
+                    <span class="precio">$28,000</span>
+                    <br><br>
                     <button>Agregar al carrito</button>
                 </div>
             </article>
-            <article>
+            <article class="columna-producto-2">
                 <img src="/Bild/producto3.jpg" alt="">
                 <div class="box-descripcion">
                     <h3>Producto 3</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores hic quidem ad recusandae ab,
                         corrupti delectus commodi est assumenda, debitis fugiat nobis, dicta quisquam? Commodi ipsam
                         esse nihil qui recusandae?</p>
-                    <span>$27,000</span>
+                    <span class="precio">$27,000</span>
+                    <br><br>
                     <button>Agregar al carrito</button>
                 </div>
             </article>
         </section>
         <!-- Seccion 3 -->
-        <section id="Seccion 3">
-            <article>
+        <section class="Seccion3">
+            <article class="columna">
                 <img src="./Bild/producto4.jpg" alt="">
                 <div class="box-descripcion">
                     <h3>Producto 4</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores hic quidem ad recusandae ab,
                         corrupti delectus commodi est assumenda, debitis fugiat nobis, dicta quisquam? Commodi ipsam
                         esse nihil qui recusandae?</p>
-                    <span>$22,000</span>
+                    <span class="precio">$22,000</span>
+                    <br><br>
                     <button>Agregar al carrito</button>
             </article>
-            <article>
+            <article class="columna">
                 <img src="./Bild/producto5.jpg" alt="">
                 <div class="box-descripcion">
                     <h3>Producto 5</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores hic quidem ad recusandae ab,
                         corrupti delectus commodi est assumenda, debitis fugiat nobis, dicta quisquam? Commodi ipsam
                         esse nihil qui recusandae?</p>
-                    <span>$20,000</span>
+                    <span class="precio">$20,000</span>
+                    <br><br>
                     <button>Agregar al carrito</button>
             </article>
-            <article>
+            <article class="columna">
                 <img src="./Bild/producto6.jpg" alt="">
                 <div class="box-descripcion">
                     <h3>Producto 6</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores hic quidem ad recusandae ab,
                         corrupti delectus commodi est assumenda, debitis fugiat nobis, dicta quisquam? Commodi ipsam
                         esse nihil qui recusandae?</p>
-                    <span>$25,000</span>
+                    <span class="precio">$25,000</span>
+                    <br><br>
                     <button>Agregar al carrito</button>
             </article>
         </section>
         <!-- Categorias de producto -->
         <h2>Categorias de los Productos</h2>
-        <section id="Cat">
+        <section class="Seccion-inferior">
             <div class="categoria">
                 <img src="./Bild/categoria1.jpg" alt="">
                 <h2>Oficina</h2>
@@ -131,9 +137,9 @@
     </main>
 
     <footer>
-        <section>
-            <div id="box-categorias">
-                <h3></h3>
+        <section id="footer">
+            <div id="box-categorias" class="box">
+                <h3>Categorias</h3>
                 <nav>
                     <ul>
                         <li><a href="">Cocina</a></li>
@@ -144,7 +150,7 @@
                     </ul>
                 </nav>
             </div>
-            <div id="box-nosotros">
+            <div id="box-nosotros" class="box">
                 <h3>Sobre Nosotros</h3>
                 <nav>
                     <ul>
@@ -156,7 +162,7 @@
                     </ul>
                 </nav>
             </div>
-            <div id="box-soporte">
+            <div id="box-soporte" class="box">
                 <h3>Soporte</h3>
                 <nav>
                     <ul>
@@ -168,7 +174,7 @@
             </div>
         </section>
         <section class="final">
-            <h2>Todos los derechos reservados a TiendaMuebles</h2>
+            <p>Todos los derechos reservados a TiendaMuebles</p>
         </section>
     </footer>
 </body>
