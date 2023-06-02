@@ -1,0 +1,66 @@
+/*reglas generales*/
+
+* {
+  font-size: 62.5;
+  font-family: "Raleway";
+  margin: 0;
+  align-items: center;
+}
+
+footer section{
+  background-color: #181d2b;
+}
+
+.Hero {
+  background-image: url(/Bild/principal.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-family: "Playfair";
+  font-size: 4rem;
+}
+
+h3 {
+  font-family: "Playfair";
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+section,.Seccion-1{
+    display: flex;
+}
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+.Produkte{
+    background-color: #0376b8;
+}
+
+
+
+
+/** Productos */
+
+button {
+  background-color: #11b111;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+
+
