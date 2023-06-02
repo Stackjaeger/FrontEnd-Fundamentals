@@ -10,8 +10,19 @@ section {
   display: grid;
 }
 
+footer{
+  background-color: #181d2b;
+}
+
+.Hero{
+  background-image: url(/Bild/principal.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
 body {
   text-align: center;
+  margin: 0;
 }
 
 main {
@@ -95,8 +106,12 @@ button {
 }
 
 .Seccion-1 {
-  display: grid;
-  grid-template-columns: 4fr 3fr;
+  display: flex;
+  background-color: #0376b8;
+}
+
+.Seccion-1 div{
+  flex-grow: 4;
 }
 
 .Seccion2 {
