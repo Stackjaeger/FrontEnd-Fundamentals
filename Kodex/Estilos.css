@@ -1,18 +1,34 @@
 /*reglas generales*/
 
 * {
-  font-size: 62.5;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 
-footer section{
+header {
+  padding: 1.5rem 0;
+}
+
+header h1,
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+footer section {
   background-color: #181d2b;
 }
 
 .Hero {
   background-image: url(/Bild/principal.jpg);
+  display: block;
   background-repeat: no-repeat;
   height: 50vh;
 }
@@ -22,45 +38,123 @@ a {
   color: black;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Playfair", sans-serif;
+}
+
 h2 {
-  font-family: "Playfair";
   font-size: 4rem;
 }
 
 h3 {
-  font-family: "Playfair";
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+nav#nav-main ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
 }
 
-section,.Seccion-1{
-    display: flex;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+main,
+section.kategorien {
+  padding: 2% 5%;
+}
+
+.Seccion-1 {
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 3px 6px 1px #00000061;
+}
+
+span.Precio {
+  display: block;
+  margin: 12px 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+}
+
+button {
+  padding: 8px 13px;
+  box-shadow: 1px 2px 5px #002f60;
+  margin-bottom: 13px;
+  background: #13ec13;
+  border-radius: 4px;
+  color: #000650;
+  font-weight: 600;
+  font-size: large;
 }
 
 /*Media Query*/
 
 /** Reescribir colores */
 
-.Produkte{
-    background-color: #0376b8;
+.Titulo {
+  color: #037bc0;
 }
-
-
-
 
 /** Productos */
 
-button {
-  background-color: #11b111;
-  border: none;
-  padding: 10px 25px;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: 400;
+.columna-1 {
+  flex-basis: 60%;
+}
+.columna-2 {
+  flex-basis: 40%;
 }
 
+article{
+  background-color: #1586fb;
+  color: white;
+  text-align: center;
+}
 
+.box-description,.columna-2{
+  padding: 1.5rem;
+}
 
+nav#nav-main{
+  background: #1586fb;
+  padding: 10px;
+}
+
+/* PRODUCTO 2 3 4 5 6 */
+
+.Produkte{
+  margin: 15px 0;
+  display: flex;
+  gap: 15px;
+}
+
+/* CATEGORIAS */
+
+.kategorien{
+  display: flex;
+  gap: 15px;
+}
+
+section.kategorien h2{
+  margin: 1rem 0;
+  color: #1586fb;
+  font-size: 1.5rem;
+}
+
+div.oficina,div.hogar,div.cocina{
+  box-shadow: 0 0 2px #1586fb;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+  background: #1586fb1f;
+}
+
+section.kategorien div img{
+  border-radius: 10px 10px 0 0;
+}
