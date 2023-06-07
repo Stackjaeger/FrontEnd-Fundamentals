@@ -8,9 +8,9 @@
   border: none;
 }
 
-header {
+/* header {
   padding: 1rem 0 1rem 0;
-}
+} */
 
 header h1,
 h2 {
@@ -22,16 +22,16 @@ img {
   display: block;
 }
 
-.Hero{
+.Hero {
   min-height: 50vh;
   background-image: url(../Bild/principal.jpg);
   background-repeat: no-repeat;
-  color: #FFF;
+  color: #fff;
   background-position: center;
   background-size: cover;
 }
 
-.Hero div{
+.Hero div {
   min-height: inherit;
   display: flex;
   justify-content: center;
@@ -47,11 +47,12 @@ a {
 
 h1,
 h2,
-h3,.Titulo {
+h3,
+.Titulo {
   font-family: "Playfair", sans-serif;
 }
 
-h1{
+h1 {
   font-size: 4rem;
 }
 
@@ -67,12 +68,12 @@ h3 {
   font-weight: 600;
 }
 
-p{
+p {
   font-size: 1rem;
   line-height: 1.3rem;
 }
 
-li{
+li {
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -81,6 +82,7 @@ nav#nav-main ul {
   display: flex;
   justify-content: space-evenly;
   color: white;
+  margin-bottom: 0;
 }
 
 ul {
@@ -88,7 +90,7 @@ ul {
   padding: 0;
 }
 
-main{
+main {
   padding: 2% 3%;
 }
 
@@ -133,25 +135,27 @@ button {
   flex-basis: 40%;
 }
 
-.articulos,.Seccion-1{
+.articulos,
+.Seccion-1 {
   background-color: #1586fb;
   color: white;
   text-align: center;
   box-shadow: 1px 3px 6px 1px #00000061;
 }
 
-.box-descripcion,.columna-2{
+.box-descripcion,
+.columna-2 {
   padding: 1.5rem;
 }
 
-nav#nav-main{
+nav#nav-main {
   background: #1586fb;
   padding: 10px;
 }
 
 /* PRODUCTO 2 3 4 5 6 */
 
-.Produkte{
+.Produkte {
   margin: 15px 0;
   display: flex;
   gap: 15px;
@@ -159,47 +163,51 @@ nav#nav-main{
 
 /* CATEGORIAS */
 
-.kategorien{
+.kategorien {
   display: flex;
   gap: 15px;
 }
 
-section.kategorien h2{
+section.kategorien h2 {
   margin: 1rem 0;
   color: #1586fb;
   font-size: 1.5rem;
 }
 
-div.oficina,div.hogar,div.cocina{
+div.oficina,
+div.hogar,
+div.cocina {
   box-shadow: 0 0 2px #1586fb;
   padding: 0;
   border-radius: 10px 10px 0 0;
   background: #1586fb1f;
 }
 
-section.kategorien div img{
+section.kategorien div img {
   border-radius: 10px 10px 0 0;
 }
 
-footer, footer a{
+footer,
+footer a {
   background-color: #3f3f3f;
   color: white;
   text-align: center;
 }
 
-footer section.inferior{
+footer section.inferior {
   display: flex;
   gap: 30px;
   margin: 1rem 0;
   line-height: 1.7rem;
+  padding-top: 1rem;
 }
 
-.final{
+.final {
   background-color: #202020;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 0;
 }
 
-footer div{
+footer div {
   flex-basis: 33.333%;
 }
